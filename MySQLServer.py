@@ -16,7 +16,7 @@ def create_database(db_name: str, host: str, user: str, password: str) -> None:
 
         # Create database if it doesn't exist
         cursor.execute(
-            f"CREATE DATABASE IF NOT EXISTS `{db_name}` "
+            f"CREATE DATABASE IF NOT EXISTS alx_book_store "
             "DEFAULT CHARACTER SET utf8mb4"
         )
         print(f"Database `{db_name}` created successfully!")
